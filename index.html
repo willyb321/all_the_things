@@ -10,14 +10,16 @@
 
 <body class="w3-light-grey" style="background-image: url(https://raw.githubusercontent.com/willyb321/all_the_things/gh-pages/images/bg.jpg); background-repeat: no-repeat; background-size: cover;">
     <div class="w3-container w3-teal">
+    <span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
         <h1>All of Willyb321's/TehSuperWilly's Projects</h1>
     </div>
     <div class="w3-container w3-blue">
         <h3>Hello!</h3>
         <p>Look Below!</p>
     </div>
-    <nav class="w3-sidenav w3-collapse w3-blue" style="width:200px" id="mySidenav">
-        <a href="#" onclick="w3_close()" class="w3-closenav w3-hide-large">Close &times;</a>
+    <nav class="w3-sidenav w3-white w3-card-2" style="width:200px; display: none;" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-closenav w3-large">Close &times;</a>
         <br>
         <script type="text/javascript">
         sa_client = "9854d962d84bc54918580243a10db6dd";
@@ -81,15 +83,15 @@
             <p>The Fabled Footer</p>
         </div>
     </div>
-    <script>
-    function w3_open() {
-        document.getElementById("mySidenav").style.display = "block";
-    }
-
-    function w3_close() {
-        document.getElementById("mySidenav").style.display = "none";
-    }
-    </script>
+   <script>
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("mySidenav").style.position = "fixed!important";
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
 </body>
 
 </html>
