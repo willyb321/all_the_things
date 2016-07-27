@@ -9,6 +9,12 @@
 <link rel="stylesheet" href="./stylesheets/stylesheet.css">
 
 <body class="w3-light-grey" style="background-image: url(https://raw.githubusercontent.com/willyb321/all_the_things/gh-pages/images/bg.jpg); background-repeat: no-repeat; background-size: cover;">
+ <nav class="w3-sidenav w3-white w3-card-2" style="display: none; height: 100%" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-closenav w3-large">Close &times;</a>
+        <br>
+        </script>
+    </nav>
     <div class="w3-container w3-teal">
     <span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
         <h1 style="font-size: 5vw">All of Willyb321's/TehSuperWilly's Projects</h1>
@@ -17,14 +23,8 @@
         <h3">Hello!</h3>
         <p>Look Below!</p>
     </div>
-    <nav class="w3-sidenav w3-white w3-card-2" style="width:200px; display: none;" id="mySidenav">
-        <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-closenav w3-large">Close &times;</a>
-        <br>
-        </script>
-    </nav>
+   
     <div class="w3-main" style="margin-left:200px">
-        <span class="w3-opennav w3-hide-large" onclick="w3_open()">&#9776;</span>
         <br>
         <div class="w3-container">
             <ul class="w3-ul w3-card-4 w3-hoverable w3-red">
@@ -65,7 +65,6 @@
    <script>
 function w3_open() {
     document.getElementById("mySidenav").style.display = "block";
-    document.getElementById("mySidenav").style.position = "fixed!important";
 }
 function w3_close() {
     document.getElementById("mySidenav").style.display = "none";
